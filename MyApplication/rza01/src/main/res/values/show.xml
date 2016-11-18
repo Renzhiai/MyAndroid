@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <item>小明</item>
+        <item>小红</item>
+        <item>小花</item>
+        <item>小天</item>
+    </string-array>
+</resources>
