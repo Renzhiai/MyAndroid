@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">性能测试</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_window_utils">WindowUtils</string>
+
+    <!--textview memory-->
+    <string name="total_memory">总内存：</string>
+    <string name="available_memory">可用内存：</string>
+    <string name="used_memory">已使用内存：</string>
+    <!--button memory-->
+    <string name="open_window_memory">打开悬浮窗</string>
+    <string name="close_window_memory">关闭悬浮窗</string>
+    <!--editview memory-->
+    <string name="memory_pkg_hint">请输入测试的包名，如：com.oeasy.oecommunity</string>
+</resources>
