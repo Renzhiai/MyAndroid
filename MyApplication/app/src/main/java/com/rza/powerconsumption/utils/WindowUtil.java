@@ -1,16 +1,7 @@
 package com.rza.powerconsumption.utils;
 
-import android.app.ActivityManager;
 import android.content.Context;
 import android.graphics.PixelFormat;
-import android.os.Bundle;
-import android.os.Debug;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,14 +9,12 @@ import android.view.WindowManager;
 
 import com.rza.powerconsumption.R;
 
-import java.util.List;
-
-public class WindowUtils{
+public class WindowUtil {
 
     private static View mView = null;
     private static WindowManager mWindowManager = null;
     private static Context mContext = null;
-    public static Boolean isShown = false;
+    private static Boolean isShown = false;
 
     /**
      * 显示弹出框

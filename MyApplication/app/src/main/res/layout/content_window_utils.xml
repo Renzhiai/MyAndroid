@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.rza.powerconsumption.utils.WindowUtils"
+    tools:context="com.rza.powerconsumption.utils.WindowUtil"
     tools:showIn="@layout/activity_window_utils">
 
 </RelativeLayout>

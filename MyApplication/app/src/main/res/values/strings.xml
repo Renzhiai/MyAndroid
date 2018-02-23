@@ -11,5 +11,5 @@
     <string name="open_window_memory">打开悬浮窗</string>
     <string name="close_window_memory">关闭悬浮窗</string>
     <!--editview memory-->
-    <string name="memory_pkg_hint">请输入测试的包名，如：com.oeasy.oecommunity</string>
+    <string name="memory_pkg_hint">请输入测试包的pid，以空格分隔</string>
 </resources>

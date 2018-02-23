@@ -26,10 +26,8 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".MyService" />
-
         <activity
-            android:name=".utils.WindowUtils"
+            android:name=".utilsGT.WindowUtils"
             android:label="@string/title_activity_window_utils"
             android:theme="@style/AppTheme.NoActionBar" />
 
