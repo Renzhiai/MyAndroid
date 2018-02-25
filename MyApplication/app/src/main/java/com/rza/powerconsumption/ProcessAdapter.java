@@ -45,7 +45,7 @@ public class ProcessAdapter extends BaseAdapter {
         if(convertView==null){
             holder=new ViewHolder();
             convertView=inflater.inflate(R.layout.layout_process,null);
-            holder.tv1=(TextView) convertView.findViewById(R.id.pid);
+            holder.tv1=(TextView) convertView.findViewById(R.id.pid_pro);
             holder.tv2=(TextView) convertView.findViewById(R.id.uid);
             holder.tv3=(TextView) convertView.findViewById(R.id.menSize);
             holder.tv4=(TextView) convertView.findViewById(R.id.packageName);

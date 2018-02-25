@@ -5,14 +5,20 @@ import android.content.Context;
 import android.os.Debug;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MemUtil {
     //根据pid获取内存信息
-    public static void getMeminfoByPid(int[] pids, Context ctx){
+    public static int getMeminfoByPid(int[] pids, Context ctx){
+        int mem=0;
         ActivityManager am = (ActivityManager) ctx.getSystemService(ctx.ACTIVITY_SERVICE);
         Debug.MemoryInfo[] mis=am.getProcessMemoryInfo(pids);
         for (Debug.MemoryInfo mi:mis){
             Log.d("rza","TPSS="+mi.getTotalPss());
+            mem=mem+mi.getTotalPss();
         }
+        return mem;
     }
 
     //展示内存信息

@@ -22,9 +22,11 @@ public class MainActivity extends AppCompatActivity {
 
     Button bt1;
     Button bt2;
+    Button bt3;
     TextView tv1;
     TextView tv2;
     TextView tv3;
+    TextView tv4;
     EditText et1;
     int permission=0;
 
@@ -37,9 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
         bt1 = (Button) findViewById(R.id.bt1);  //打开悬浮窗
         bt2 = (Button) findViewById(R.id.bt2);  //关闭悬浮窗
+        bt3 = (Button) findViewById(R.id.bt3);
         tv1 = (TextView) findViewById(R.id.totalMem);   //
         tv2 = (TextView) findViewById(R.id.availableMem);
         tv3 = (TextView) findViewById(R.id.usedMem);
+        tv4 = (TextView) findViewById(R.id.appMem);
         et1 = (EditText) findViewById(R.id.pid);
 
         permission = ContextCompat.checkSelfPermission(this,Manifest.permission.SYSTEM_ALERT_WINDOW);
@@ -57,13 +61,14 @@ public class MainActivity extends AppCompatActivity {
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                WindowUtil.showPopupWindow(MainActivity.this);
-                WindowUtil.getmView().setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        MemUtil.getMeminfoByPid(AppUtil.getPid(et1),MainActivity.this);
-                    }
-                    });
+                tv4.setText(""+MemUtil.getMeminfoByPid(AppUtil.getPid(et1),MainActivity.this)+"KB");
+//                WindowUtil.showPopupWindow(MainActivity.this);
+//                WindowUtil.getmView().setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+//                        MemUtil.getMeminfoByPid(AppUtil.getPid(et1),MainActivity.this);
+//                    }
+//                    });
             }
         });
 
