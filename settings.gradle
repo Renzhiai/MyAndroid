@@ -1,1 +1,1 @@
-include ':app', ':battery'
+include ':app', ':battery', ':gttest'

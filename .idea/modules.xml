@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Application.iml" filepath="$PROJECT_DIR$/Application.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/battery/battery.iml" filepath="$PROJECT_DIR$/battery/battery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gttest/gttest.iml" filepath="$PROJECT_DIR$/gttest/gttest.iml" />
     </modules>
   </component>
 </project>
