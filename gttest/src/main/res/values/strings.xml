@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">GtTest</string>
+
+    <!--按钮-->
+    <string name="bt_getMeminfo">获取内存信息</string>
+
+    <!--编辑框-->
+    <string name="et_pkgName">请输入包名</string>
 </resources>

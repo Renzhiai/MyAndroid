@@ -9,9 +9,14 @@
     android:orientation="vertical"
     tools:context="com.zhiai.gttest.MainActivity">
 
+    <EditText
+        android:id="@+id/et_pkgName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_pkgName"/>
     <Button
-        android:id="@+id/meminfo"
+        android:id="@+id/bt_getMeminfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="获取内存信息" />
+        android:text="@string/bt_getMeminfo" />
 </LinearLayout>
